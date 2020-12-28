@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>寒訓課表</title>
+    <style>
+        td,
+        tr,
+        th {
+            text-align: center;
+            border-radius: 50%/50%;
+            padding: 5px;
+            width: 75px;
+            height: 48px;
+        }
+        th{
+            background-color: pink;
+            box-shadow:0 0 4px purple;
+        }
+        td{
+            background-color: lightblue;
+            box-shadow:0 0 4px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2021四校聯合寒訓-成朔楓望寒建景</h1>
+    <table>
+        <!---示範用
+        <tr>
+            <th><%=data[0][0]%></th>
+            <th><%=data[0][1]%></th>
+            <th><%=data[0][2]%></th>
+            <th><%=data[0][3]%></th>
+            <th><%=data[0][4]%></th>
+            <th><%=data[0][5]%></th>
+            <th><%=data[0][6]%></th>
+            <th><%=data[0][7]%></th>
+        </tr>
+        --->
+        <tr>
+            <%for(let i=0;i<data[0].length;i++){%>
+            <th><%=data[0][i]%></th>
+            <%}%>
+        </tr>
+        <tr>
+            <%for(let i=0;i<data[0].length;i++){%>
+                <td><%=data[1][i]%></td>
+            <%}%>
+        </tr>
+        <tr>
+            <%for(let i=0;i<data[0].length;i++){%>
+                <td><%=data[2][i]%></td>
+            <%}%>
+        </tr>
+        <tr>
+            <%for(let i=0;i<data[0].length;i++){%>
+                <td><%=data[3][i]%></td>
+            <%}%>
+        </tr>
+
+    </table>
+</body>
+
+</html>
